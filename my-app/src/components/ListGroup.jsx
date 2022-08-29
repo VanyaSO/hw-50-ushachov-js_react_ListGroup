@@ -10,9 +10,9 @@ export default function ListGroup(props) {
     console.log(arr)
 
     return (
-        <ul class="list-group">
+        <ul className="list-group">
             {arr.map((todo) => (
-                <li class="list-group-item">{todo}</li>
+                <li className="list-group-item">{todo}</li>
             ))}
         </ul>
     );
