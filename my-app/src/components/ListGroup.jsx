@@ -4,8 +4,8 @@ export const ListGroup = ({children}) => {
 
     return (
         <ul className="list-group">
-            {children.map((todo) => (
-                <li className="list-group-item">{todo}</li>
+            {children.map((item) => (
+                <li className="list-group-item">{item}</li>
             ))}
         </ul>
     );
