@@ -1,19 +1,14 @@
 import React from 'react';
 
-export default function ListGroup(props) {
-
-    let arr = null;
-    for(let p in props){
-        arr = props[p];
-    }
-
-    console.log(arr)
+export const ListGroup = ({children}) => {
 
     return (
         <ul className="list-group">
-            {arr.map((todo) => (
+            {children.map((todo) => (
                 <li className="list-group-item">{todo}</li>
             ))}
         </ul>
     );
 }
+
+export default ListGroup;
